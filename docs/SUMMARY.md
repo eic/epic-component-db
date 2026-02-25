@@ -1,6 +1,10 @@
 # Component Database (CDB) — Functionality Summary
 
+## About
+
 The Component Database (CDB) is a web-based tool developed at Argonne National Laboratory to document, organize, and track components used in the MBA accelerator. It serves as a centralized repository connecting component documentation, physical inventory, and machine design planning.
+
+This ANL project's code is managed in the [GitHub repository](https://github.com/AdvancedPhotonSource/ComponentDB).
 
 ---
 
