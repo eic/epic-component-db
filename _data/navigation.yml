@@ -16,17 +16,17 @@
 #     - text: Item-B-2
 #       url: /..../item-b-2.html
 
-- text: About
-  url: /about
+- text: Home
+  url: /
 - text: News
   url: /news
-- text: Collaboration
-  url: /science
-- text: Physics
-  url: /people
-- text: Detector
-  url: /publications
-- text: Software and Computing
-  url: /talks
-- text: Resources
-  url: /resources
+# - text: Collaboration
+#   url: /science
+# - text: Physics
+#   url: /people
+# - text: Detector
+#   url: /publications
+# - text: Software and Computing
+#   url: /talks
+# - text: Resources
+#   url: /resources

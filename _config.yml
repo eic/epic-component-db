@@ -19,10 +19,10 @@ plugins:
   - jekyll-sitemap
 
 # jekyll-seo-tag condfigs and site meta
-title: ePIC Collaboration
-tagline: ePIC Collaboration
-description: ePIC Collaboration
-author: ePIC Collaboration
+title: CDB
+tagline: CDB
+description: CDB
+author: CDB
 logo: /assets/img/logo.png
 locale: en_US
 
