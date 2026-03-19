@@ -7,7 +7,7 @@
 # =============================================================================
 
 # basic infor for GitHub pages
-domain: quantom-collab.github.io
+domain: https://eic.github.io/epic-component-db/
 baseurl: "" # intentionally left blank
 
 # markdown renderer
