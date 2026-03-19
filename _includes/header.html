@@ -1,0 +1,87 @@
+<header>
+  <!-- control the width -->
+  <div class="container header">
+
+    <!-- the 1st row: logo and search button -->
+    <nav class="navbar-top">
+
+      <!-- logo -->
+      <img src="{{ site.logo | relative_url }}" height="64">
+
+      <!-- menu expanding button (hiddin in larger screens) -->
+      <button type="button" class="menu-btn"
+        data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- search button -->
+      <button type="button" class="search-btn"
+        data-bs-toggle="modal" data-bs-target="#search-modal"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+          fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"
+        >
+          <path
+            d="
+                M11.742 10.344a6.5 6.5 0 1 0-1.397
+                1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0
+                1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12
+                6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0
+            "
+          />
+        </svg>
+      </button>
+
+    <!-- end of header-navbar -->
+    </nav>
+
+    <!-- the 1st row: the navigation menu -->
+    <nav id="header" class="navbar-btm">
+
+      <!-- holder of the menu -->
+      <div id="navbarNav" class="menu-holder">
+
+        <!-- menu as a list -->
+        <ul class="menu-list">
+
+          <!-- NOTE: currently doesn't support submenus -->
+          {% for link in site.data.navigation %}
+          <li class="menu-item-holder">
+            <a class="menu-item"
+              href="{{ site.baseurl }}{{ link.url }}"
+            >
+              {{ link.text }}
+            </a>
+          </li>
+          {% endfor %}
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Modal Search -->
+<div
+  class="modal fade" id="search-modal" tabindex="-1"
+  aria-label="Search Box" aria-details="Search Dialog" aria-hidden="true"
+>
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="input-group mb-3">
+          <input
+            type="text" class="form-control" id="search-input"
+            placeholder="Search" aria-label="Search"
+          >
+        </div>
+        <ul id="results-container"></ul>
+      </div>
+    </div>
+  </div>
+</div>

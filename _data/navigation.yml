@@ -1,0 +1,32 @@
+# Key-valus pairs:
+# ----------------
+# * text: The text to display in the navigation bar
+# * url: The URL to link to
+# * submenu: (optional) A list of key-value pairs (text & url) to create a
+#   dropdown menu.
+# Example:
+# --------
+# - text: Item A
+#   url: /item-a.html
+# - text: Item-B
+#   url: /posts/item-b.html
+#   submenu:
+#     - text: Item-B-1
+#       url: /news/item-b-1.html
+#     - text: Item-B-2
+#       url: /..../item-b-2.html
+
+- text: About
+  url: /about
+- text: News
+  url: /news
+- text: Collaboration
+  url: /science
+- text: Physics
+  url: /people
+- text: Detector
+  url: /publications
+- text: Software and Computing
+  url: /talks
+- text: Resources
+  url: /resources

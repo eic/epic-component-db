@@ -1,0 +1,61 @@
+<footer>
+  <!-- alias for our convenience -->
+  {% assign prefix = site.url | append: "/assets/img" %}
+  <!-- the footer class serves as a namespace to select correct CSS classes -->
+  <div class="container footer"> 
+
+    <!-- logos -->
+    <div class="logo-holder">
+
+      <!-- DOE -->
+      <a class="logo target="_blank" href="https://www.energy.gov/"">
+        <img class="img-fluid" src="{{ prefix }}/doe_seal.png"
+          style="max-width: 60%;"
+        />
+      </a>
+
+      <!-- ANL -->
+      <a class="logo" target="_blank" href="https://www.anl.gov/">
+        <img class="img-fluid" src="{{ prefix }}/argonne_logo.png" />
+      </a>
+
+      <!-- JLab -->
+      <a class="logo" target="_blank" href="https://www.jlab.org/">
+        <img class="img-fluid" src="{{ prefix }}/jlab_logo.png" />
+      </a>
+
+      <!-- VT -->
+      <a class="logo" target="_blank" href="https://www.vt.edu/">
+        <img class="img-fluid" src="{{ prefix }}/vt_logo.png" />
+      </a>
+    </div>
+
+    <!-- a horizonal divider -->
+    <hr class="hdivider">
+
+    <!-- some other information -->
+    <div class="body">
+
+      <!-- hyprlinks to the home page and contact email address -->
+      <div class="navlinks">
+
+        <!-- go to homepage -->
+        <a href="{{ site.url }}"> HOME </a>
+
+        <!-- a vertical divider -->
+        <span class="mx-1"> | </span>
+
+        <!-- email address -->
+        <a href="mailto:icloet@anl.gov"> CONTACT US </a>
+      </div>
+
+      <!-- copyright notice -->
+      <div class="copyright" >
+        Copyright &copy; 2025,
+        <a href="{{ site.url }}"> QuantOm Collaboration </a>
+        All Right Reserved
+      </div>
+    </div>
+
+    </div>
+</footer>

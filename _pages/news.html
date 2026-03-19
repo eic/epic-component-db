@@ -1,0 +1,36 @@
+---
+title: News
+---
+
+<!-- card grid layout -->
+<div class="news">
+
+  {% assign collections = site.news | sort: "date" | reverse %}
+  {% for news in collections %}
+
+  <!-- layout in one column: only one card -->
+  <div class="col">
+
+    <!-- layout within one card -->
+    <div class="block">
+
+      <!-- date in the header -->
+      <div class="date">{{ news.date | date: "%B %d, %Y" }}</div>
+
+      <!-- title -->
+      <div class="heading">
+        <a href="{{ news.url }}">{{ news.title }}</a>
+      </div>
+
+      <!-- excerpt -->
+      <div class="content">
+        {{ news.content | markdownify |
+            remove: "<p>" | remove: "</p>" | truncatewords: 100 }}
+        <a href="{{ news.url }}"> &lt;open&gt; </a>
+      </div>
+
+    </div>
+  </div>
+  {% endfor %}
+
+</div>
