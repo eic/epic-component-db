@@ -7,7 +7,7 @@
 # =============================================================================
 
 # basic info for GitHub pages
-domain: eic.github.io
+domain: https://eic.github.io/epic-component-db/
 # baseurl: "/epic-component-db" # intentionally left blank
 
 # markdown renderer

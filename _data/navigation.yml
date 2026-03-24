@@ -20,8 +20,8 @@
   url: /
 - text: Summary
   url: /summary
-# - text: Collaboration
-#   url: /science
+- text: Design
+  url: /design
 # - text: Physics
 #   url: /people
 # - text: Detector
