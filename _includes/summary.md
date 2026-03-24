@@ -8,7 +8,7 @@
 
 The Component Database (CDB) is a web-based tool developed at Argonne National Laboratory to document, organize, and track components used in the MBA accelerator. It serves as a centralized repository connecting component documentation, physical inventory, and machine design planning.
 
-This ANL project's code is managed in the [GitHub repository](https://github.com/AdvancedPhotonSource/ComponentDB).
+This ANL project's code is managed in the [GitHub repository](https://github.com/AdvancedPhotonSource/ComponentDB){:target="_blank"}.
 This _Summary_ is based on the User Guide created by the authors of this software.
 
 
@@ -31,12 +31,7 @@ The CDB is built around three interrelated domains.
 Since different components require different metadata, CDB uses a flexible properties system. Key characteristics include:
 
 - Any number of properties can be attached to components, instances, or designs
-- Properties support **handlers** — smart logic that integrates with external systems:
-  - **PDMLink** — Engineering drawings
-  - **eTraveler** — Inspection forms
-  - **PARIS** — Purchase requisitions
-  - **ICMS** — Document management
-  - **EDP** and **AMOS** — External order and collection management
+- Properties support **handlers** — smart logic that integrates with external systems
 - Properties can be static or **dynamic** (varying per instance)
 - All value changes are logged historically
 
@@ -54,7 +49,11 @@ Every domain supports log entries for recording changes, maintenance events, and
 
 #### Portal Interface
 
-The CDB portal (`cdb.aps.anl.gov`) is accessible on the APS intranet or VPN. Users can browse without logging in, but editing requires an account. Key interface features include:
+There is a test instance of the CDB portal running at BNL, which is accessible on its intranet,
+e.g. using SSH tunnels or VPN: [https://cdb.eic.bnl.gov](https://cdb.eic.bnl.gov){:target="_blank"}.
+
+Users can browse most of the data without logging in, but editing requires an account, which is provided
+when needed, by the system administrators. Key interface features include:
 
 - Filterable and sortable list views
 - Row expansion for quick access to properties and logs
@@ -65,15 +64,3 @@ The CDB portal (`cdb.aps.anl.gov`) is accessible on the APS intranet or VPN. Use
 
 ---
 
-#### External Integrations
-
-The CDB connects to several external tools, making it a central hub for component lifecycle management across the project:
-
-| System | Purpose |
-|---|---|
-| PDMLink | Engineering drawings |
-| eTraveler | Inspection workflows |
-| PARIS | Procurement / purchase requisitions |
-| ICMS | Document management |
-| EDP | External collections |
-| AMOS | Maintenance orders |
