@@ -6,8 +6,8 @@
 #     Here in _config.yml, we still need to list the plugins we want to use.
 # =============================================================================
 
-# basic infor for GitHub pages
-domain: quantom-collab.github.io
+# basic info for GitHub pages
+domain: eic.github.io
 # baseurl: "/epic-component-db" # intentionally left blank
 
 # markdown renderer

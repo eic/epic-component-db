@@ -1,4 +1,6 @@
-
+---
+layout: default
+---
 
 ### Component Database (CDB) — Functionality Summary
 
@@ -8,8 +10,6 @@
 
 The Component Database (CDB) is a web-based tool developed at Argonne National Laboratory to document, organize, and track components used in the MBA accelerator. It serves as a centralized repository connecting component documentation, physical inventory, and machine design planning.
 
-This ANL project's code is managed in the [GitHub repository](https://github.com/AdvancedPhotonSource/ComponentDB){:target="_blank"}.
-This _Summary_ is based on the User Guide created by the authors of this software.
 
 
 ---
@@ -17,11 +17,8 @@ This _Summary_ is based on the User Guide created by the authors of this softwar
 #### Three Core Domains
 
 The CDB is built around three interrelated domains.
-
 - **Component Catalog** — Functions like a reference library. Each entry represents a unique component type (custom-fabricated or commercial) with metadata including name, model number, description, technical system, function, vendor sources, images, and custom properties.
-
 - **Component Inventory** — Tracks physical instances of catalog items, each assigned a unique QR ID code for real-world identification. Includes location tracking down to the room, cabinet, or shelf level.
-
 - **Design Library** — Allows users to group components into assemblies (e.g., a PLC chassis with I/O modules, or a BPM processing system), enabling a full hierarchical Bill of Materials for the machine.
 
 ---
@@ -54,7 +51,6 @@ e.g. using SSH tunnels or VPN: [https://cdb.eic.bnl.gov](https://cdb.eic.bnl.gov
 
 Users can browse most of the data without logging in, but editing requires an account, which is provided
 when needed, by the system administrators. Key interface features include:
-
 - Filterable and sortable list views
 - Row expansion for quick access to properties and logs
 - Customizable columns (including property value columns)
